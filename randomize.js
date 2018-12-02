@@ -13,6 +13,9 @@ function randomize() {
 		case "How I Met Your Mother":
 			randomHowIMetYourMother();
 			break;
+        case "New Girl":
+            randomNewGirl();
+            break;
 		case "The Office":
 			randomTheOffice();
 			break;
@@ -101,6 +104,39 @@ function randomHowIMetYourMother() {
             return 0;
     }
     $("#message").html("How I Met Your Mother<br>Season " + season + ", Episode " + episode);
+}
+
+// Displays a random episode of Parks and Recreation
+function randomNewGirl() {
+    const season = Math.floor(Math.random() * 7) + 1;
+    var episode;
+    switch (season) {
+        case 1:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 2:
+            episode = Math.floor(Math.random() * 25) + 1;
+            break;
+        case 3:
+            episode = Math.floor(Math.random() * 23) + 1;
+            break;
+        case 4:
+            episode = Math.floor(Math.random() * 22) + 1;
+            break;
+        case 5:
+            episode = Math.floor(Math.random() * 22) + 1;
+            break;
+        case 6:
+            episode = Math.floor(Math.random() * 22) + 1;
+            break;
+        case 7:
+            episode = Math.floor(Math.random() * 8) + 1;
+            break;
+        default:
+            $("#message").html("Something done goofed.");
+            return 0;
+    }
+    $("#message").html("Parks and Recreation<br>Season " + season + ", Episode " + episode);
 }
 
 // Displays a random episode of The Office
