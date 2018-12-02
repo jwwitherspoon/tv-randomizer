@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Necessary Bootstrap tags-->
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <title>TV Randomizer</title>
+
+	    <!--Bootstrap CSS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!--Font Awesome CSS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<!--Developer CSS-->
+		<link rel="stylesheet" href="styles.css">
+
+		<!--Bootstrap scripts-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!--Developer scripts-->
+		<script src="randomize.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="mx-auto rounded text-center">
+				<h2 class="text-center">TV Randomizer</h2>
+				<p id="message">Select a show, then click Randomize!</p>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+						Select Show
+					</button>
+					<div class="dropdown-menu scrollable-menu">
+						<button class="dropdown-item" type="button" onclick="getDropdownValue(this)">How I Met Your Mother</button>
+						<button class="dropdown-item" type="button" onclick="getDropdownValue(this)">The Office</button>
+						<button class="dropdown-item" type="button" onclick="getDropdownValue(this)">Parks and Recreation</button>
+					</div>
+				</div>
+				<button class="btn btn-success" onclick="randomize()">Randomize</button>
+				<input type=hidden id="dropdown-value">
+			</div>
+		</div>
+	</body>
+</html>
