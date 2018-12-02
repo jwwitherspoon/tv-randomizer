@@ -7,6 +7,9 @@ function getDropdownValue(button) {
 function randomize() {
 	let showName = document.getElementById("dropdown-value").value;
 	switch (showName) {
+        case "Friends":
+            randomFriends();
+            break;
 		case "How I Met Your Mother":
 			randomHowIMetYourMother();
 			break;
@@ -17,6 +20,48 @@ function randomize() {
 			randomParksAndRecreation();
 			break;
 	}
+}
+
+// Displays a random episode of Friends
+function randomFriends() {
+    const season = Math.floor(Math.random() * 10) + 1;
+    var episode;
+    switch (season) {
+        case 1:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 2:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 3:
+            episode = Math.floor(Math.random() * 25) + 1;
+            break;
+        case 4:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 5:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 6:
+            episode = Math.floor(Math.random() * 25) + 1;
+            break;
+        case 7:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 8:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 9:
+            episode = Math.floor(Math.random() * 24) + 1;
+            break;
+        case 10:
+            episode = Math.floor(Math.random() * 18) + 1;
+            break;
+        default:
+            $("#message").html("Something done goofed.");
+            return 0;
+    }
+    $("#message").html("Friends<br>Season " + season + ", Episode " + episode);
 }
 
 // Displays a random episode of How I Met Your Mother
