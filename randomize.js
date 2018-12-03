@@ -1,11 +1,12 @@
 // Changes the value of the hidden input to the dropdown's value everytime the dropdown is changed.
 function getDropdownValue(button) {
-	$("#dropdown-value").val(button.innerHTML);
+    $("#message").html(button.innerHTML);
+    $("#dropdown-value").val(button.innerHTML);
 }
 
 // Calls show randomizing functions based on name pulled from dropdown
 function randomize() {
-	let showName = document.getElementById("dropdown-value").value;
+	let showName = $("#dropdown-value").val();
 	switch (showName) {
         case "Friends":
             randomFriends();
@@ -22,6 +23,9 @@ function randomize() {
 		case "Parks and Recreation":
 			randomParksAndRecreation();
 			break;
+        default:
+            $("#message").html("Something done goofed with randomize().");
+            break;
 	}
 }
 
@@ -61,7 +65,7 @@ function randomFriends() {
             episode = Math.floor(Math.random() * 18) + 1;
             break;
         default:
-            $("#message").html("Something done goofed.");
+            $("#message").html("Something done goofed with randomFriends().");
             return 0;
     }
     $("#message").html("Friends<br>Season " + season + ", Episode " + episode);
@@ -100,7 +104,7 @@ function randomHowIMetYourMother() {
             episode = Math.floor(Math.random() * 24) + 1;
             break;
         default:
-            $("#message").html("Something done goofed.");
+            $("#message").html("Something done goofed with randomHowIMetYourMother().");
             return 0;
     }
     $("#message").html("How I Met Your Mother<br>Season " + season + ", Episode " + episode);
@@ -133,10 +137,10 @@ function randomNewGirl() {
             episode = Math.floor(Math.random() * 8) + 1;
             break;
         default:
-            $("#message").html("Something done goofed.");
+            $("#message").html("Something done goofed with randomNewGirl().");
             return 0;
     }
-    $("#message").html("Parks and Recreation<br>Season " + season + ", Episode " + episode);
+    $("#message").html("New Girl<br>Season " + season + ", Episode " + episode);
 }
 
 // Displays a random episode of The Office
@@ -172,7 +176,7 @@ function randomTheOffice() {
             episode = Math.floor(Math.random() * 25) + 1;
             break;
         default:
-            $("#message").html("Something done goofed.");
+            $("#message").html("Something done goofed with randomTheOffice().");
             return 0;
     }
     $("#message").html("The Office<br>Season " + season + ", Episode " + episode);
@@ -205,7 +209,7 @@ function randomParksAndRecreation() {
             episode = Math.floor(Math.random() * 13) + 1;
             break;
         default:
-            $("#message").html("Something done goofed.");
+            $("#message").html("Something done goofed with randomParksAndRecreation().");
             return 0;
     }
     $("#message").html("Parks and Recreation<br>Season " + season + ", Episode " + episode);
