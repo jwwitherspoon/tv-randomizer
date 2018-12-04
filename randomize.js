@@ -185,7 +185,6 @@ function randomTheOffice() {
 // Displays and plays a random episode of Parks and Recreation
 function randomParksAndRecreation() {
 	const season = Math.floor(Math.random() * 7) + 1;
-    const season = 1;
     var episode;
     switch (season) {
         case 1:
