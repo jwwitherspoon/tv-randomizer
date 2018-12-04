@@ -8,6 +8,8 @@ function getDropdownValue(button) {
 function randomize() {
 	let showName = $("#dropdown-value").val();
 	switch (showName) {
+        case "":
+            $("#message").html("Please select a show first.");
         case "Friends":
             randomFriends();
             break;
