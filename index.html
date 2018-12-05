@@ -26,6 +26,7 @@
 			<div class="mx-auto rounded text-center">
 				<h2 class="text-center">TV Randomizer</h2>
 				<p id="message">Select a show, then click Randomize!</p>
+				<div class="row justify-content-center" id="links"></div>
 				<div class="dropdown">
 					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
 						Select Show
@@ -38,8 +39,8 @@
 						<button class="dropdown-item" type="button" onclick="getDropdownValue(this)">Parks and Recreation</button>
 					</div>
 				</div>
-				<button class="btn btn-success" onclick="randomize()">Randomize</button>
-				<input type=hidden id="dropdown-value">
+				<button class="btn btn-primary" onclick="randomize()">Randomize</button>
+				<input type="hidden" id="dropdown-value">
 			</div>
 		</div>
 	</body>
