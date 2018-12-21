@@ -33,6 +33,9 @@ function randomize() {
 		case "Parks and Recreation":
 			randomParksAndRecreation();
 			break;
+        case "That 70s Show":
+            randomThat70sShow();
+            break;
         default:
             $("#message").html("Something done goofed with randomize().");
             break;
@@ -75,7 +78,7 @@ function randomFriends() {
             episode = Math.floor(Math.random() * 18) + 1;
             break;
         default:
-            $("#message").html("Something done goofed with randomFriends().");
+            $("#message").html("Something done goofed with Friends.");
             return 0;
     }
     $("#message").html("Friends<br>Season " + season + ", Episode " + episode);
@@ -155,7 +158,7 @@ function randomHowIMetYourMother() {
                 case 22:
                     $("#links").append("<a href='https://www.hulu.com/watch/b95dcbca-309d-4d87-80dc-958ea8bafb36' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 1."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 1."); break;
             }
             break;
         case 2:
@@ -227,7 +230,7 @@ function randomHowIMetYourMother() {
                 case 22:
                     $("#links").append("<a href='https://www.hulu.com/watch/72110c51-21ae-4c8d-9297-6cdb2afcb6db' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 2."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 2."); break;
             }
             break;
         case 3:
@@ -293,7 +296,7 @@ function randomHowIMetYourMother() {
                 case 20:
                     $("#links").append("<a href='https://www.hulu.com/watch/0683c75c-b763-406c-8d4f-92899522e88a' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 3."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 3."); break;
             }
             break;
         case 4:
@@ -371,7 +374,7 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/30621eeb-e047-466a-9f58-7d1a3d7b83a5' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 4."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 4."); break;
             }
             break;
         case 5:
@@ -449,7 +452,7 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/4d5a3460-bd3c-48d1-a74a-c9f0b2b7a2a7' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 5."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 5."); break;
             }
             break;
         case 6:
@@ -527,7 +530,7 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/e9a3e450-5b8f-4843-b8f7-c4d492edc3bf' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 6."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 6."); break;
             }
             break;
         case 7:
@@ -605,7 +608,7 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/17174163-3794-4709-92da-a738b817f917' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 7."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 7."); break;
             }
             break;
         case 8:
@@ -683,7 +686,7 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/6e0af06c-f8ca-4369-b74c-d1a00c607f37' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 8."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 8."); break;
             }
             break;
         case 9:
@@ -761,11 +764,11 @@ function randomHowIMetYourMother() {
                 case 24:
                     $("#links").append("<a href='https://www.hulu.com/watch/c517585b-0de2-45e7-ac68-14036891594f' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomHowIMetYourMother() in Season 9."); break;
+                default: $("#message").html("Something done goofed with How I Met Your Mother in Season 9."); break;
             }
             break;
         default:
-            $("#message").html("Something done goofed with randomHowIMetYourMother().");
+            $("#message").html("Something done goofed with How I Met Your Mother.");
             return 0;
     }
     $("#message").html("How I Met Your Mother<br>Season " + season + ", Episode " + episode);
@@ -851,7 +854,7 @@ function randomNewGirl() {
                 case 24:
                     $("#links").append("<a href='https://www.netflix.com/watch/70276506' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 1."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 1."); break;
             }
             break;
         case 2:
@@ -932,7 +935,7 @@ function randomNewGirl() {
                 case 25:
                     $("#links").append("<a href='https://www.netflix.com/watch/70286237' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 2."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 2."); break;
             }
             break;
         case 3:
@@ -1007,7 +1010,7 @@ function randomNewGirl() {
                 case 23:
                     $("#links").append("<a href='https://www.netflix.com/watch/80010740' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 3."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 3."); break;
             }
             break;
         case 4:
@@ -1079,7 +1082,7 @@ function randomNewGirl() {
                 case 22:
                     $("#links").append("<a href='https://www.netflix.com/watch/80057634' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 4."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 4."); break;
             }
             break;
         case 5:
@@ -1151,7 +1154,7 @@ function randomNewGirl() {
                 case 22:
                     $("#links").append("<a href='https://www.netflix.com/watch/80111447' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 5."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 5."); break;
             }
             break;
         case 6:
@@ -1223,7 +1226,7 @@ function randomNewGirl() {
                 case 22:
                     $("#links").append("<a href='https://www.netflix.com/watch/80192709' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 6."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 6."); break;
             }
             break;
         case 7:
@@ -1253,11 +1256,11 @@ function randomNewGirl() {
                 case 8:
                     $("#links").append("<a href='https://www.hulu.com/watch/f8944859-0214-4d73-924b-16c7ab7e2b73' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomNewGirl() in Season 7."); break;
+                default: $("#message").html("Something done goofed with New Girl in Season 7."); break;
             }
             break;
         default:
-            $("#message").html("Something done goofed with randomNewGirl().");
+            $("#message").html("Something done goofed with New Girl.");
             return 0;
     }
     $("#message").html("New Girl<br>Season " + season + ", Episode " + episode);
@@ -1289,7 +1292,7 @@ function randomTheOffice() {
                 case 6:
                     $("#links").append("<a href='https://www.netflix.com/watch/70069632' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 1."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 1."); break;
             }
             break;
         case 2:
@@ -1361,7 +1364,7 @@ function randomTheOffice() {
                 case 22:
                     $("#links").append("<a href='https://www.netflix.com/watch/70069654' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 2."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 2."); break;
             }
             break;
         case 3:
@@ -1436,7 +1439,7 @@ function randomTheOffice() {
                 case 23:
                     $("#links").append("<a href='https://www.netflix.com/watch/70080638' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 3."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 3."); break;
             }
             break;
         case 4:
@@ -1484,7 +1487,7 @@ function randomTheOffice() {
                 case 14:
                     $("#links").append("<a href='https://www.netflix.com/watch/70108700' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 4."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 4."); break;
             }
             break;
         case 5:
@@ -1574,7 +1577,7 @@ function randomTheOffice() {
                 case 28:
                     $("#links").append("<a href='https://www.netflix.com/watch/70126248' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 5."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 5."); break;
             }
             break;
         case 6:
@@ -1658,7 +1661,7 @@ function randomTheOffice() {
                 case 26:
                     $("#links").append("<a href='https://www.netflix.com/watch/70151958' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 6."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 6."); break;
             }
             break;
         case 7:
@@ -1742,7 +1745,7 @@ function randomTheOffice() {
                 case 26:
                     $("#links").append("<a href='https://www.netflix.com/watch/70189031' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 7."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 7."); break;
             }
             break;
         case 8:
@@ -1820,7 +1823,7 @@ function randomTheOffice() {
                 case 24:
                     $("#links").append("<a href='https://www.netflix.com/watch/70210988' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 8."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 8."); break;
             }
             break;
         case 9:
@@ -1895,11 +1898,11 @@ function randomTheOffice() {
                 case 23:
                     $("#links").append("<a href='https://www.netflix.com/watch/70286867' target='_blank' class='btn btn-danger'>Netflix</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomTheOffice() in Season 9."); break;
+                default: $("#message").html("Something done goofed with The Office in Season 9."); break;
             }
             break;
         default:
-            $("#message").html("Something done goofed with randomTheOffice().");
+            $("#message").html("Something done goofed with The Office.");
             return 0;
     }
     $("#message").html("The Office<br>Season " + season + ", Episode " + episode);
@@ -1937,7 +1940,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/70152010' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/5fda2c68-cf3c-4f9c-b10a-ceaf9662f817' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 1."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 1."); break;
             }
             break;
         case 2:
@@ -2039,7 +2042,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/70152034' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/5a0de120-ccce-4db7-b598-476c887ebf5d' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 2."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 2."); break;
             }
             break;
         case 3:
@@ -2109,7 +2112,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/70190110' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/fb16754c-df13-4480-b5fc-4af5ece50219' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 3."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 3."); break;
             }
             break;
         case 4:
@@ -2203,7 +2206,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/70210937' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/aa5f6f4e-fca6-42f2-9448-f9e61a5d4319' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 4."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 4."); break;
             }
             break;
         case 5:
@@ -2297,7 +2300,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/70286802' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/dd15cca2-7949-4212-897e-869645f88efb' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 5."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 5."); break;
             }
             break;
         case 6:
@@ -2383,7 +2386,7 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/80004335' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/83a14748-9fa6-4899-a2c0-b7981dc58bec' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 6."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 6."); break;
             }
             break;
         case 7:
@@ -2437,12 +2440,671 @@ function randomParksAndRecreation() {
                     $("#links").append("<a href='https://www.netflix.com/watch/80080580' target='_blank' class='btn btn-danger'>Netflix</a>");
                     $("#links").append("<a href='https://www.hulu.com/watch/952f31f4-a701-4018-b459-13fb866918f1' target='_blank' class='btn btn-success'>Hulu</a>");
                     break;
-                default: $("#message").html("Something done goofed with randomParksAndRecreation() in Season 7."); break;
+                default: $("#message").html("Something done goofed with Parks and Recreation in Season 7."); break;
             }
             break;
         default:
-            $("#message").html("Something done goofed with randomParksAndRecreation().");
+            $("#message").html("Something done goofed with Parks and Recreation.");
             return 0;
     }
     $("#message").html("Parks and Recreation<br>Season " + season + ", Episode " + episode);
+}
+
+function randomThat70sShow() {
+    const season = Math.floor(Math.random() * 8) + 1;
+    var episode;
+    switch (season) {
+        case 1:
+            episode = Math.floor(Math.random() * 25) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165197' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165198' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165199' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165200' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165202' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165203' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165205' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165204' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165206' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165201' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165210' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165209' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165211' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165213' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165215' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165212' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165214' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165207' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165217' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165218' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165219' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165216' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165208' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165220' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165221' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 1."); break;
+            }
+            break;
+        case 2:
+            episode = Math.floor(Math.random() * 26) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165225' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165222' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165223' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165224' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165229' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165231' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165226' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165228' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165230' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165227' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165232' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165234' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165233' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165236' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165237' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165238' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165239' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165235' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165243' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165240' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165241' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165242' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165244' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165245' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165246' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 26:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165247' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 2."); break;
+            }
+            break;
+        case 3:
+            episode = Math.floor(Math.random() * 25) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165248' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165249' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165251' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165250' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165252' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165254' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165253' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165255' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165258' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165256' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165261' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165257' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165259' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165262' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165260' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165263' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165264' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165265' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165266' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165267' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165268' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165269' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165271' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165270' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165272' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 3."); break;
+            }
+            break;
+        case 4:
+            episode = Math.floor(Math.random() * 27) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165273' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165274' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165275' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165276' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165278' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165277' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165279' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165281' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165280' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165282' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165284' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165285' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165286' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165283' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165287' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165289' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165290' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165291' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165292' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165288' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165293' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165294' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165295' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165297' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165296' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 26:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165298' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 27:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165299' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 4."); break;
+            }
+            break;
+        case 5:
+            episode = Math.floor(Math.random() * 25) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165300' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165301' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165302' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165303' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165304' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165305' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165306' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165307' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165308' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165309' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165310' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165315' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165313' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165314' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165311' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165312' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165316' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165317' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165318' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165319' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165320' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165321' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165322' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165323' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165324' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 5."); break;
+            }
+            break;
+        case 6:
+            episode = Math.floor(Math.random() * 25) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165325' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165326' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165327' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165328' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165329' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165330' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165331' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165332' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165333' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165334' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165335' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165336' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165337' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165338' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165339' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165340' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165341' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165342' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165343' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165344' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165345' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165347' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165346' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165348' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165349' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 6."); break;
+            }
+            break;
+        case 7:
+            episode = Math.floor(Math.random() * 25) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165350' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165351' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165352' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165353' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165354' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165355' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165359' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165356' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165357' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165358' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165360' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165361' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165362' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165363' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165364' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165365' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165366' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165367' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165368' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165369' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165370' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165371' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165372' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 24:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165373' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 25:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165374' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 7."); break;
+            }
+            break;
+        case 8:
+            episode = Math.floor(Math.random() * 22) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165375' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165376' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165378' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165379' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165377' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165380' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165381' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165382' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165385' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165383' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165384' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165386' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165387' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165391' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165388' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165389' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165390' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165392' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165394' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165393' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165395' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.netflix.com/watch/70165396' target='_blank' class='btn btn-danger'>Netflix</a>");
+                    break;
+                default: $("#message").html("Something done goofed with That 70s Show in Season 8."); break;
+            }
+            break;
+        default:
+            $("#message").html("Something done goofed with That 70s Show.");
+            return 0;
+    }
+    $("#message").html("That 70s Show<br>Season " + season + ", Episode " + episode);
 }
