@@ -18,6 +18,9 @@ function randomize() {
 	switch (showName) {
         case "":
             $("#message").html("Please select a show first.");
+        case "Brooklyn Nine-Nine":
+            randomBrooklynNineNine();
+            break;
         case "Criminal Minds":
             randomCriminalMinds();
             break;
@@ -52,6 +55,384 @@ function randomize() {
             $("#message").html("Something done goofed with randomize().");
             break;
 	}
+}
+
+// Displays a random episode of Brooklyn Nine-Nine
+function randomBrooklynNineNine() {
+    const season = Math.floor(Math.random() * 5) + 1;
+    var episode;
+    switch (season) {
+        case 1:
+            episode = Math.floor(Math.random() * 22) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/46acfada-540f-4e0c-b4c9-ee6a7fb1c201' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/f835066b-c678-4e26-9306-51a942005c08' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/13abab33-c1c6-4b87-a2b8-351dfc3b62ca' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/bf6bcd00-b567-4d26-b2dc-c9affabc1c36' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/5fed8d49-2da5-4773-9e91-2a7e0dbf63b8' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/051a5990-dbbc-4ce1-9b62-261bc994370e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/419f2579-6b34-4a28-af3d-399a0b3f707e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8d208f26-c8f6-472d-95ec-075848b669b6' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/36db6564-6aab-466e-a61c-2d666eba6f7a' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fa931a4c-3e4d-4953-82c4-89a613850c8c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/cba5c2a7-cefc-4c51-b3b0-c3928c3b5069' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/ec07408e-5334-4b17-89f6-621835e3a437' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/22cf0824-c6c4-4836-afe8-3679272fb06f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/7babc119-c0ff-4604-a79a-0229576e84b2' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.hulu.com/watch/d7c6b602-f893-4089-b759-4e234b6de166' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.hulu.com/watch/5f171572-90e8-4be9-9e2d-952a4f2e7089' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.hulu.com/watch/aa029364-6b14-44f9-a4f2-49124d24f804' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fcb86a1f-8f7d-4be9-9038-41151427d7b5' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.hulu.com/watch/3ba02fa4-faff-4138-8175-1ab4c9f92a4f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.hulu.com/watch/0fa6d456-2006-4c96-a5d8-58cd2776e8d7' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.hulu.com/watch/f5596efe-ba6d-4a3c-888d-afc872a5bad9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a82e1b49-579a-4de6-b782-97129ea986f9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Brooklyn Nine-Nine in Season 1."); break;
+            }
+            break;
+        case 2:
+            episode = Math.floor(Math.random() * 23) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/e1ffcf7f-51fd-446d-9e7e-e640b64972bd' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/dc7e2a87-fb09-4949-b1fd-3db1d49224a3' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/7e75132f-ce57-4349-95e6-b2ebbe619120' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/ef3f0538-f55b-444f-b97d-e4ab3a0bd317' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/d7cf0dbe-fdbf-41c3-aa64-568677f0e3a9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/beb87470-7bde-4b80-bdb4-169d29ea6947' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/1d813ffb-ed61-4d21-883d-613a64b8cb61' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b9885317-2c22-484f-a0f0-937f7dd557eb' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/f3bbed7e-dae5-488d-bbe8-4cb23a00c819' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b725765c-63e1-48fa-af45-4f8a88a1b290' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/1b9f96b7-3458-4086-a2f1-8cb5db67860a' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/48a3e1f1-edd6-4c09-b864-8ba17f47c01c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/64280b4a-0d91-44be-8089-28d99e39609b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fdf10336-ff55-4e46-ab40-1468b74f469e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.hulu.com/watch/936e5d59-a507-427e-8647-8c49ff01faf0' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.hulu.com/watch/1b64da02-bee3-4264-b1b9-69efb1c98e6a' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.hulu.com/watch/c7bbd2bc-99ff-4b62-85a1-e8fdc1b57c97' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.hulu.com/watch/7ddbe89c-1943-4173-9d0f-33e3fa06fe5c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.hulu.com/watch/294f58ea-46b7-4d38-a510-74b91c2a3890' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.hulu.com/watch/84cffda1-214b-4deb-b57c-e67342b7900b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.hulu.com/watch/802700e3-a290-473c-94ee-58f9b32d7d92' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.hulu.com/watch/4d8a2e1f-1444-47e8-ab30-af104d281ed2' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.hulu.com/watch/10f0110d-2468-4920-8d26-2d6c4b9991bd' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Brooklyn Nine-Nine in Season 2."); break;
+            }
+            break;
+        case 3:
+            episode = Math.floor(Math.random() * 23) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/bf991336-8c13-45a7-893a-1702a400d0d9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/06fb0963-152b-4bfc-8804-4f90064acb49' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/c8a1ec51-7490-4f5c-b58e-8709b30e8ed2' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/56611b8c-ca39-40ce-8378-99ff585bd307' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/7e4cb17b-152f-4580-89bb-22454f9b8945' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/56bca1b3-b643-45f1-bdcd-e13ee0c01b9b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/199e79af-ad65-411f-ad98-cb09202cb083' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/529fdab8-392a-4832-9888-1093e063ae3b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/0d8770bf-ff5f-4e05-a642-cc097a7bae06' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/6ab50c7e-459e-4d55-aa91-37a8b452b56e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/5d5b0035-45e4-4d5e-b1ed-4bed6293a098' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/57de09e7-2fde-4148-81b1-351eb15ef7f7' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/020c90e4-badd-49fd-8726-e6c605b70dc8' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/c2931668-0b6d-405f-a576-8216ddfbb72f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8d6ce0e4-0df0-4d45-ac66-944bda7d39a1' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.hulu.com/watch/c27c54cf-23e2-487f-bd82-0b2f95327fab' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b6318f77-89fc-4e97-a34b-1695d0e75f83' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.hulu.com/watch/9e7c0f65-98aa-4f00-848b-30780de46d34' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.hulu.com/watch/110d0228-3fee-44b9-a2f9-5517b28f806b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.hulu.com/watch/863fdd25-07a0-454f-ab86-384949fe3fb9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8249fa68-7035-4a00-8172-c9bda3c3b5de' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.hulu.com/watch/763b626a-e692-42dd-ae9e-a2c1fdd79c3c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 23:
+                    $("#links").append("<a href='https://www.hulu.com/watch/20c20460-59f5-4470-9b7e-9d724c71bacf' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Brooklyn Nine-Nine in Season 3."); break;
+            }
+            break;
+        case 4:
+            episode = Math.floor(Math.random() * 22) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b4d2ab80-c9f4-42ee-a369-07ffd07ea1c6' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/1df567bd-1c89-448b-801c-60f1ad1979dc' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/343f7806-5f99-4f22-9200-475f6a42cf84' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/0e41cf47-0aa2-4fb6-9f4f-59304b1cff83' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/6ea0b2a4-35f0-4299-8845-c64570b6c9a7' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/212a51cc-4221-43c8-b5f0-012e558f81e1' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/ee3e8443-7d50-4f29-8e67-9aca899b3da9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/24e84ca6-9281-4eb6-b9cd-20b43e34c708' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/065f6e39-bcfe-4ad7-9d49-db76d718b12b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/e6c44102-31d1-46c0-b85d-eca20b17dbae' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/ac4ed1f2-af2a-44a3-bbd4-8865f5774bc7' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/d8b46913-2008-4160-b5cd-5bd1f99863b2' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/74db9ab4-b383-4824-8ff2-a46152303454' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/cec3ca82-71d0-42a3-86d8-837298635bcc' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b17f312c-7476-4edb-bc58-d7ed9207a1bc' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.hulu.com/watch/7158ea51-f97d-4ab6-abc4-0b2b6ee5e398' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.hulu.com/watch/4850e5e0-27b8-4260-b770-a9678e739e49' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.hulu.com/watch/d0ec4e1f-ed2a-42d0-b7fa-24b413fb1b5c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fc6713eb-ab46-4f08-9131-85089cb5473f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.hulu.com/watch/65ab1216-d198-4986-9a4d-5d3a19cc5fa0' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a5644fba-384f-44d0-9dda-3149b91fd5c9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a9d3f9fb-e161-42ea-b62e-3c0b605d89ec' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Brooklyn Nine-Nine in Season 4."); break;
+            }
+            break;
+        case 5:
+            episode = Math.floor(Math.random() * 22) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/6ef30a50-c93c-4470-aa9b-d5a608afaf75' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fec883d4-8b02-4f5f-a773-868f42ab7efd' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8bd4ff7e-5591-4397-870b-d3492da2935e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/fbd99f75-a69e-43d2-a119-04495a2be73b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/ba53e25d-a145-4fc7-b9a9-2872dbf2686f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/775aed64-c09d-41dd-84d3-d3bb9da31212' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8b63d59c-a8cf-424a-b2a2-f906938d6a26' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/bc850cec-7bf4-4f1d-b107-c2f3fa3a9d0b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/119742e4-c64f-45ac-a2a2-9b234ebe3518' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/cba20988-3fde-44c4-98ce-0718c178686c' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/44940213-ed1c-4e44-9814-b2ec291a69fa' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/b18f6fbe-406c-41e3-9f4c-a3cca23cf3af' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/3e05a02e-cb2e-498e-94c7-4638f9c7897b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/17a61e74-cab8-46b3-b4d1-187ea0697b21' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 15:
+                    $("#links").append("<a href='https://www.hulu.com/watch/8cb3b011-f814-4e9b-8854-bd5eca31d226' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 16:
+                    $("#links").append("<a href='https://www.hulu.com/watch/5a103f07-a423-4f71-ac95-dece76be4211' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 17:
+                    $("#links").append("<a href='https://www.hulu.com/watch/e9da5eea-2a2f-49fd-9e08-80b5b9c6dcf8' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 18:
+                    $("#links").append("<a href='https://www.hulu.com/watch/bd47a574-edc4-4deb-9970-9e74740973c7' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 19:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a64c387f-6038-499f-8e88-db34a9e7b87b' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 20:
+                    $("#links").append("<a href='https://www.hulu.com/watch/95097e42-e7f6-4f0e-9eb5-f01e8ac625c8' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 21:
+                    $("#links").append("<a href='https://www.hulu.com/watch/daa9b923-9286-436e-b5ab-5ea4ef223fd1' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 22:
+                    $("#links").append("<a href='https://www.hulu.com/watch/180163d3-a21c-425c-9104-5cef6887a450' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Brooklyn Nine-Nine in Season 5."); break;
+            }
+            break;
+        default:
+            $("#message").html("Something done goofed with Brooklyn Nine-Nine.");
+            return 0;
+    }
+    $("#message").html("Brooklyn Nine-Nine<br>Season " + season + ", Episode " + episode);
 }
 
 // Displays a random episode of Criminal Minds
