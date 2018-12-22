@@ -18,6 +18,9 @@ function randomize() {
 	switch (showName) {
         case "":
             $("#message").html("Please select a show first.");
+        case "Firefly":
+            randomFirefly();
+            break;
         case "Friends":
             randomFriends();
             break;
@@ -40,6 +43,66 @@ function randomize() {
             $("#message").html("Something done goofed with randomize().");
             break;
 	}
+}
+
+// Displays a random episode of Firefly
+function randomFirefly() {
+    const season = Math.floor(Math.random() * 1) + 1;
+    var episode;
+    switch (season) {
+        case 1:
+            episode = Math.floor(Math.random() * 14) + 1;
+            switch (episode) {
+                case 1:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a201099a-2c92-45ec-a23b-62305f72a00e' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 2:
+                    $("#links").append("<a href='https://www.hulu.com/watch/61064efe-9ae6-4f8b-9c8d-dd8bcaa5dfa3' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 3:
+                    $("#links").append("<a href='https://www.hulu.com/watch/893bd3ea-79cc-4b7b-9bfa-20aea1b9cf2a' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 4:
+                    $("#links").append("<a href='https://www.hulu.com/watch/bcf90424-3131-4c69-ae3e-5e9cb0c28ee4' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 5:
+                    $("#links").append("<a href='https://www.hulu.com/watch/02a0880d-e7e3-4ed4-8deb-055f1df8a930' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 6:
+                    $("#links").append("<a href='https://www.hulu.com/watch/2f9b39c6-8535-4369-8445-0866fafc597f' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 7:
+                    $("#links").append("<a href='https://www.hulu.com/watch/17ac1214-d2b2-4fd9-a6ca-2bee6d151a8a' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 8:
+                    $("#links").append("<a href='https://www.hulu.com/watch/9408fc08-12bf-4000-b206-5a556a257df9' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 9:
+                    $("#links").append("<a href='https://www.hulu.com/watch/934b52fa-87fa-4ed3-bd1b-418401a923ae' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 10:
+                    $("#links").append("<a href='https://www.hulu.com/watch/e22957db-2300-4304-b95b-305ad595fa44' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 11:
+                    $("#links").append("<a href='https://www.hulu.com/watch/f709b6da-f9c8-4d3a-840c-b436ceb98670' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 12:
+                    $("#links").append("<a href='https://www.hulu.com/watch/65977706-7905-4ac8-bb5c-e970577fb5fa' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 13:
+                    $("#links").append("<a href='https://www.hulu.com/watch/a38b9d1e-312d-4d72-b5db-4eb4ac4e3f96' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                case 14:
+                    $("#links").append("<a href='https://www.hulu.com/watch/49a8047a-b556-4b68-acb4-32c386855582' target='_blank' class='btn btn-success'>Hulu</a>");
+                    break;
+                default: $("#message").html("Something done goofed with Firefly in Season 1."); break;
+            }
+            break;
+        default:
+            $("#message").html("Something done goofed with Firefly.");
+            return 0;
+    }
+    $("#message").html("Firefly<br>Season " + season + ", Episode " + episode);
 }
 
 // Displays a random episode of Friends
